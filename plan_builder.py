@@ -1,3 +1,7 @@
+# Script takes UUID as argument, will produce a .tf that describes the instance.
+# Supports Neutron ports, block devices.  Assumes the first block device is BFV.
+# Requires openstacksdk
+
 import openstack, os, sys
 
 UUID = sys.argv[1]
